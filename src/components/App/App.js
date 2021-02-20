@@ -5,6 +5,7 @@ import Home from '../Home';
 
 import './App.css';
 import Create from '../Create';
+import BlogDetails from '../BlogDetails';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
             </Route>
             <Route path="/create">
               <Create />
+            </Route>
+            <Route path="/blogs/:id">
+              <BlogDetails />
             </Route>
           </Switch>
         </div>
